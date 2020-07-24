@@ -1,0 +1,28 @@
+.tabs{
+    display: flex;
+    flex-direction: column;
+}
+
+.tab_style{
+    padding: 20px;
+    background-color: lightgray;
+}
+
+.tab_input{
+    display: none;
+}
+
+.tab_input:checked + .tab_link{
+    background-color: darkgray;
+}
+
+.conted{
+    display: none;
+    background-color: white;
+}
+
+.tab_input:checked + .tab_link + .conted{
+    width: 100%;
+    display: block;
+    padding: 10px;
+}
